@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eden Shaveet - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #f7f7f7;
+        }
+        
+        #cv {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #73b1d3;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 5px 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .icon-list {
+		    columns: 3;
+            column-gap: 20px;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .icon-list li {
+            margin-bottom: 5px;
+        }
+        
+        .icon-list i {
+            margin-right: 5px;
+        }
+		
+		.icon-list-2 {
+		    columns: 1;
+            column-gap: 20px;
+            list-style: none;
+            padding-left: 0;
+        }
+		.icon-list-2 li {
+            margin-bottom: 10px;
+			display: flex;
+            align-items: center;
+        }
+		.icon-list-2 i {
+            margin-right: 10px;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            max-width: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+		
+        .entry {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 15px;
+        }
+
+        .details {
+            flex: 1;
+        }
+
+        .year {
+            background-color: #73b1d3;
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        .coursework {
+            font-size: 12px;
+            color: #888;
+        }
+		.subtext {
+            font-size: 14px;
+            color: #888;
+        }
+		.affiliation {
+            font-size: 12px;
+            color: #888;
+        }
+		.icon-button {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #73b1d3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .icon-button:hover {
+            background-color: #73b1d3;
+        }
+		@media (max-width: 600px) {
+            .icon-list li {
+                flex-direction: column; /* Stack elements vertically */
+                align-items: flex-start; /* Align elements to the left */
+            }
+
+            .icon-list i {
+                margin-right: 0; /* Reset the margin for the icon */
+                margin-bottom: 5px; /* Add some spacing below the icon */
+            }
+
+            .year {
+                margin-left: 0; /* Reset the margin for the year */
+                margin-top: 5px; /* Add some spacing between the details and year */
+            }
+
+            .icon-button {
+                display: block;
+                margin: 5px auto; /* Center the button */
+            }
+
+            /* Add fixed width to entry containers to prevent overflow */
+            .entry {
+                width: 100%; /* Adjust the width as needed */
+                box-sizing: border-box; /* Ensure the width includes padding and border */
+                padding: 10px; /* Add padding to the entry */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cv">
+        <img src="https://raw.githack.com/EdenShaveet/CV/main/edenavatar.png" alt="Eden Shaveet, MS">
+        <h1>Eden Shaveet, MS</h1>
+        <p><i class="far fa-envelope"></i> <code>echo "rqra.funirrg@pbyhzovn.rqh" | tr 'A-Za-z' 'N-ZA-Mn-za-m'</code></p>
+		<p><i class="fa-solid fa-school"></i> Columbia University</p>
+		<p><i class="fa-solid fa-location-dot"></i> New York City</p>
+
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="details">
+                <strong>Columbia University</strong> | Bridge to the Ph.D. Program in STEM, Computer Science
+            </div>
+            <span class="year">2022-2024</span>
+        </div>
+        <p class="coursework">Relevant Coursework: OOP in Java, Data Structures & Algorithms, Advanced Programming (C, Unix)</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Tufts University School of Medicine</strong> | MS, Health Informatics and Analytics (honors)
+            </div>
+            <span class="year">2020-2022</span>
+        </div>
+        <p class="coursework">Relevant Coursework: AI and Big Data in Healthcare (R, Python), Biostatistics, Data Wrangling (R)</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>College of Our Lady of the Elms</strong> | BA, Psychology (honors)
+            </div>
+            <span class="year">2017-2019</span>
+        </div>
+        <p class="coursework">Relevant Coursework: Research Methods (quantitative), Behavior Modification</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Mount Wachusett Community College</strong> | AA, Liberal Arts & Sciences (honors)
+            </div>
+            <span class="year">2015-2017</span>
+        </div>
+        <p class="coursework">Relevant Coursework: Computer Technologies, Statistics</p>
+        
+		<h2>Professional Experience</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>Bridge to Ph.D. Scholar</strong> | Fu Foundation School of Engineering and Applied Science, Columbia University
+            </div>
+            <span class="year">2022-2024</span>
+        </div>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Graduate Research Assistant</strong> | Dept. Public Health & Community Medicine, Tufts University School of Medicine
+            </div>
+            <span class="year">2021-2022</span>
+        </div>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Project Coordinator, Research & Evaluation</strong> | Commonwealth Medicine University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2020-2021</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Peer Evaluation Liaison</strong> | Zia Young Adult Access Center
+            </div>
+            <span class="year">2019-2020</span>
+        </div>
+
+		<div class="entry">
+            <div class="details">
+                <strong>Lead Clinical Research Intern</strong> | Dept. Psychiatry, University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2018-2019</span>
+        </div>
+		
+		<h2>Academic Service</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>Chair, Research & Evaluation Subcommittee</strong> | Youth Best Practice Committee, Youth MOVE National
+            </div>
+            <span class="year">2023 -</span>
+        </div>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Member, Stakeholder Advisory Board</strong> | Center to Optimize Evidence-Based Practice Implementation for Clinical Impact, University of Washington, Kaiser Permanente Washington Health Research Institute, University of Michigan
+            </div>
+            <span class="year">2022 -</span>
+        </div>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Manuscript Reviewer</strong> | Journal of Medical Internet Research (JMIR) | Online Journal of Public Health Informatics (OJPHI)
+            </div>
+            <span class="year">2022 -</span>
+        </div>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Member, Research & Evaluation Subcommittee</strong> | Youth Best Practice Committee, Youth MOVE National
+            </div>
+            <span class="year">2019 -</span>
+        </div>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Member, TSAI Evaluation Subcommittee</strong> | Transition Age Youth and Young Adults System of Care Access Initiative (TSAI), University of Massachusetts Chan Medical School, Massachusetts Department of Mental Health
+            </div>
+            <span class="year">2019-2021</span>
+        </div>
+		
+		<h2>Familiar Software & Languages</h2>
+        <ul class="icon-list">
+            <li><i class="fas fa-globe"></i> Python</li>
+            <li><i class="fas fa-globe"></i> Java</li>
+			<li><i class="fas fa-globe"></i> C</li>
+			<li><i class="fas fa-globe"></i> R & R Studio</li>
+			<li><i class="fas fa-globe"></i> SAS</li>
+			<li><i class="fas fa-globe"></i> HTML & CSS</li>
+			<li><i class="fas fa-globe"></i> Stata</li>
+			<li><i class="fas fa-globe"></i> REDCap</li>
+			<li><i class="fas fa-globe"></i> SPARS</li>
+			<li><i class="fas fa-globe"></i> MS Excel</li>
+			<li><i class="fas fa-globe"></i> Replit</li>
+			<li><i class="fas fa-globe"></i> Git & GitHub</li>
+			<li><i class="fas fa-globe"></i> Google Colab (Jupyter notebook)</li>
+			<li><i class="fas fa-globe"></i> Tableau</li>
+			<li><i class="fas fa-globe"></i> ArcGIS</li>
+			<li><i class="fas fa-globe"></i> QGIS</li>
+        </ul>
+		
+		<h2>Certifications</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>Cochrane Systematic Review Standard Author Training</strong> | Cochrane, Tufts University
+            </div>
+            <span class="year">2022</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Python for Data Science</strong> | Sololearn
+            </div>
+            <span class="year">2022</span>
+        </div>
+        <p class="subtext">Credential ID: CT-XTH930AO</p>
+		<div class="entry">
+            <div class="details">
+                <strong>R Programming Certificate</strong> | Programming Hub
+            </div>
+            <span class="year">2021</span>
+        </div>
+        <p class="subtext">Credential ID:1624109310793</p>
+		<div class="entry">
+            <div class="details">
+                <strong>Ethical Hacking Certificate</strong> | Programming Hub
+            </div>
+            <span class="year">2020</span>
+        </div>
+        <p class="subtext">Credential ID:1640915692582</p>
+		<div class="entry">
+            <div class="details">
+                <strong>Certified Peer Specialist</strong> | Kiva Centers
+            </div>
+            <span class="year">2018</span>
+        </div>
+        <p class="subtext">Credential ID:201892</p>
+		
+		<h2>Teaching</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>Course Tutor, Statistics for Behavioral Health</strong> | Elms College
+            </div>
+            <span class="year">2018-2019</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Section Leader (Hebrew) – “Global Citizenship”</strong> | Upward Bound Math Science, Mount Wachusett Community College
+            </div>
+            <span class="year">2017</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Teaching Assistant, Introduction to Statistics</strong> | Mount Wachusett Community College
+            </div>
+            <span class="year">2016</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Teaching Assistant, Introduction to Biology</strong> | Mount Wachusett Community College
+            </div>
+            <span class="year">2016</span>
+        </div>
+		
+		<h2>Research Group Affiliations</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>Database Research Group</strong> | Columbia University
+            </div>
+            <span class="year">2022 -</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Fast Healthcare Interoperability Resources (FHIR) Lab </strong> | Columbia University
+            </div>
+            <span class="year">2022 -</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Digital Health Research Group </strong> | Tufts University
+            </div>
+            <span class="year">2021</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Health Informatics & Analytics Research Group </strong> | Tufts University
+            </div>
+            <span class="year">2021</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Leveraging Environmental Epidemiology for Equity (LEEFE) Lab </strong> | Tufts University
+            </div>
+            <span class="year">2020</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Commonwealth Medicine, Research & Evaluation Group </strong> | University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2018-2019</span>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <strong>Psychotic Disorders Research Program </strong> | University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2018</span>
+        </div>
+		
+		<h2>Honors & Awards</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>MS in Health Informatics and Analytics Academic Achievement Award</strong>
+            </div>
+            <span class="year">2023</span>
+        </div>
+	    <p class="subtext">Tufts University School of Medicine</p>
+		<div class="entry">
+            <div class="details">
+                <strong>"18 Best" Poster Recognition, Tufts GIS Expo</strong>
+            </div>
+            <span class="year">2022</span>
+        </div>
+	    <p class="subtext">Tufts University</p>
+		<div class="entry">
+            <div class="details">
+                <strong>Liberal Arts & Sciences Curriculum Award</strong>
+            </div>
+            <span class="year">2017</span>
+        </div>
+	    <p class="subtext">Mount Wachusett Community College</p>
+		<div class="entry">
+            <div class="details">
+                <strong>Valedictorian, Gateway to College</strong>
+            </div>
+            <span class="year">2017</span>
+        </div>
+	    <p class="subtext">Mount Wachusett Community College</p>
+		<div class="entry">
+            <div class="details">
+                <strong>Phi Theta Kappa Massachusetts Academic Award</strong>
+            </div>
+            <span class="year">2017</span>
+        </div>
+	    <p class="subtext">Mount Wachusett Community College</p>
+		
+		<h2>Projects</h2>
+		<div class="entry">
+            <div class="details">
+                <strong>Adaptive Information Extraction from Social Media for Actionable Inferences in Public Health</strong> | Columbia University
+            </div>
+            <span class="year">2022 -</span>
+        </div>
+        <p class="subtext">PI: Luis Gravano, Ph.D., Co-PI: Daniel Hsu, Ph.D.</p>
+		<p class="subtext">Funding: National Science Foundation Grant No. IIS-15-63785</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Developing a Free-Access Machine Learning Model & Dataset Disclosure (MDSD) Curriculum for Health Contexts</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2022</span>
+        </div>
+        <p class="subtext">MS Capstone Project</p>
+		<p class="subtext">Preceptor: Vivian Neilley, M.S., Google Cloud</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Investigation of the Impact of Medication Storage on Medication Adherence</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2022</span>
+        </div>
+        <p class="subtext">PI: Lisa Gualtieri, Ph.D.</p>
+		<p class="subtext">Funding: Tier 3 Springboard Award, Tufts University Office of the Provost and the Office of the Vice Provost for Research (OVPR)</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>"Free Food Near Me:" Mapping U.S. Google Search Volumes, Food Insecurity Rates, and Location of Registered Food Banks</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2021</span>
+        </div>
+        <p class="subtext">PI & Professor: Shikhar Shrestha, Ph.D.</p>
+		<p class="subtext">Research associated with HIA 219: Geographic Information Systems (GIS) and Spatial Epidemiology</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>HEART-EDACS: Developing and Automating a Joint Cardiac Risk Stratification Tool in Python</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2021</span>
+        </div>
+        <p class="subtext">Professor: Olaf Dammann, M.D., Ph.D.</p>
+		<p class="subtext">Project associated with HIA 225: Python for Health Informatics & Analytics</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Medication Information Seeking & Home Medication Management During COVID-19</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2021</span>
+        </div>
+        <p class="subtext">PI: Lisa Gualtieri, Ph.D.</p>
+		<p class="subtext">Funding: Tufts Clinical & Translational Science Institute (CTSI)</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Web-Based Health Information Seeking Methods & Time Since Provider Engagement</strong> | Tufts University
+            </div>
+            <span class="year">2021-2022</span>
+        </div>
+        <p class="subtext">PIs: Jennifer Allen, Sc.D., Peter Levine, Ph.D., Thomas Stopka, Ph.D.</p>
+		<p class="subtext">Funding: Tufts OVPR, RSSP, Tufts CTSI grant UL1TR002544</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Ripple Effects: Measuring the Ripple Effect Outcomes of Children’s Mental Health Services Implementation</strong> | University of Washington | Youth MOVE National
+            </div>
+            <span class="year">2021-2023</span>
+        </div>
+        <p class="subtext">PI: Michael Pullmann, Ph.D.</p>
+		<p class="subtext">Funding: National Institute of Mental Health 1R21MH119360-01A1</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>COVID-19 Dashboard</strong> | Tufts University
+            </div>
+            <span class="year">2021</span>
+        </div>
+        <p class="subtext">PI: Laura Corlin, Ph.D.</p>
+		<p class="subtext">Funding: Tufts University and the Tufts Medical Center COVID-19 Rapid Response Seed Funding Program</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Massachusetts Healthy Transitions Grant Evaluation, second iteration</strong> | University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2020-2021</span>
+        </div>
+        <p class="subtext">PI: Alexis Henry, Sc.D.</p>
+		<p class="subtext">Funding: U.S. Substance Abuse and Mental Health Services Administration (SAMHSA) with operational support from the Massachusetts Department of Mental Health (DMH)</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>Tobacco Control Evaluation and Technical Assistance</strong> | University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2020-2021</span>
+        </div>
+        <p class="subtext">PIs: Jack Gettens, Ph.D., Linda Long-Bellil, Ph.D., J.D.</p>
+		<p class="subtext">Funding: Massachusetts Department of Public Health (DPH)</p>
+		
+		<div class="entry">
+            <div class="details">
+                <strong>System of Care Expansion for Transition Age Youth Evaluation</strong> | University of Massachusetts Chan Medical School
+            </div>
+            <span class="year">2018-2021</span>
+        </div>
+        <p class="subtext">PI: Alexis Henry, Sc.D.</p>
+		<p class="subtext">Funding: U.S. Substance Abuse and Mental Health Services Administration (SAMHSA) with operational support from the Massachusetts Department of Mental Health (DMH)</p>
+		
+		<h2>Publications</h2>
+		<div class="entry">
+            <div class="details">
+                Web-Based Health Information–Seeking Methods and Time Since Provider Engagement: Cross-sectional Study
+            </div>
+            <a href="https://formative.jmir.org/2022/11/e42126/" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<p class="subtext"><b>Shaveet E</b>, Urquhart C, Gallegos M, Dammann O, Corlin L Web-Based Health Information–Seeking Methods and Time Since Provider Engagement: Cross-sectional Study <i>JMIR Form Res.</i> 2022;6(11):e42126 doi: 10.2196/42126</p>
+		
+		<div class="entry">
+            <div class="details">
+                Designing a Browser Extension for Reliable Online Health Information Retrieval Among Older Adults Using Design Thinking
+            </div>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/36457348/" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<p class="subtext"><b>Shaveet, E.</b>, Gallegos, M., Castle, J., & Gualtieri, L. (2022). Designing a Browser Extension for Reliable Online Health Information Retrieval Among Older Adults Using Design Thinking. <i>Online Journal of Public Health Informatics</i>, 14(1). https://doi.org/10.5210/ojphi.v14i1.12593</p>
+		
+		<div class="entry">
+            <div class="details">
+                The Role of Home Medication Storage Location in Increasing Medication Adherence for Middle-Aged and Older Adults
+            </div>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/36405415/" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<p class="subtext">Gualtieri, L., <b>Shaveet, E.</b>, Estime, B., Patel, A. (2022) The role of home medication storage location in increasing medication adherence for middle-aged and older adults, <i>Frontiers in Digital Health</i>, DOI: https://doi.org/10.3389/fdgth.2022.999981</p>
+		
+		<div class="entry">
+            <div class="details">
+                Digital Health Innovation for Older Adults through Design Thinking
+            </div>
+            <a href="https://www.tandfonline.com/doi/abs/10.1080/17538068.2022.2060665?journalCode=ycih20" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<p class="subtext">Gualtieri, L., <b>Shaveet, E.</b>, Kim, D. (2022) Digital Health Innovation for Older Adults through Design Thinking, <i>Journal of Communication in Healthcare</i>, DOI: 10.1080/17538068.2022.2060665.</p>
+		
+		<h2>Under Review</h2>
+		<div class="entry">
+            <div class="details">
+                Pullmann, M., Corbin, C., Thorp, K., Muse, I., <b>Shaveet, E.</b> (under review) Participatory Development of a Pragmatic Measure of the Adequacy and Appropriateness of Mental Health Services for Youth and Young Adults
+            </div>
+        </div>
+		
+		<h2>Posters</h2>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b>, Hsu, D., Gravano, L. (2023, July). <i>Logistic Regression Classifier-Based Indications of Foodborne Illness from Yelp Reviews: Exploring Temporal Variation and Socioeconomic Context (2012 - 2021)</i>. Columbia University Pathways Programs Symposium, Columbia University, New York, NY, USA.
+            </div>
+			<a href="https://www.edenshaveet.com/other-projects/gis-cartography/cupp-2023-poster" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b>, Hsu, D., Gravano, L. (2023, April). <i>Text Classifier-Based Indications of Foodborne Illness Events from Yelp Reviews and Median Household Income by New York City Census Tract, 2020.</i> Data Science Day 2023, Columbia University, New York, NY, USA.
+            </div>
+			<a href="https://www.edenshaveet.com/other-projects/gis-cartography/dsd-2023-poster" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2022, May). <i>"Free Food Near Me:" Mapping U.S. Food Assistance Google Search Volumes, Food Insecurity Rates, and Location of Feeding America Network Food Banks in 2020.</i> Tufts University Geographic Information Systems (GIS) Expo, Boston, MA, USA.
+            </div>
+			<a href="https://www.edenshaveet.com/other-projects/gis-cartography/tufts-gis-symposium-poster-2022" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		
+		<h2>Presentations</h2>
+		<div class="entry">
+            <div class="details">
+                Gordon, J., Mohr, D., Price, R., <b>Shaveet, E.</b>, Nguyen, T., (2023, May). <i>United States Congressional Briefing: The Real-World Impact of NIMH Research.</i> Friends of NIMH. Washington D.C., USA [online].
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b>, (2023, March). <i>Infodemiology & the Adaptive Information Extraction from Social Media for Actionable Inferences in Public Health Project.</i> Columbia University. Database Research Group. New York City, NY.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b>, (2022, July). <i>Developing a Free-Access Machine Learning Model & Dataset Disclosure (MDSD) Curriculum for Public Health & Healthcare Contexts.</i> Tufts University School of Medicine. Master of Science Capstone Presentation. Boston, USA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                Eckert, V., Stafford, A., McClung, D., Espiritu, R., Trivedi, P., <b>Shaveet, E.</b>, (2022, June). <i>Career Pathways in Youth and Young Adult Mental Health: Understanding the Roles of Researchers and Evaluators Panel.</i> National Training & Technical Assistance Center (NTTAC). [webinar], USA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2022, January). <i>Let’s Talk Data: Youth Data Literacy & Data Justice</i> (January Peer Learning Community). Pacific Southwest Mental Health Technology Transfer Center Network (U.S. HHS Region 9). [Webinar], USA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b>, Gallegos, M., Urquhart, C. (2021, November). <i>Web-Based Health Information-Seeking Methods & Time Since Provider Engagement: Reflections on Access Equity.</i> Tufts University Research Symposium on The Equity in America National Survey: Examining our Definition of Equity, Boston, MA, USA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2021, November). <i>Foundations of Data Justice-Informed Evaluation & Implementation.</i> Youth MOVE Change Initiative Workshop Series [Webinar], USA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2021, November). <i>Youth Data Literacy & Data Justice.</i> Youth MOVE National Youth Best Practice Committee, Research & Evaluation Subcommittee Meeting, USA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                Gold, A., & <b>Shaveet, E.</b> (2021, August). <i>Young Adult Digital Peer Support: Beyond the Pandemic</i> [Online]. NIDILRR State of the Science Research Convening.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2021, January). <i>Website Development to Support Data Collection Workflows</i> [Online]. National Healthy Transitions Evaluator Meeting.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2020, July). <i>Token Youth: Why offering a seat at the table isn’t enough.</i> University of Maryland School of Social Work 2020 Training Institutes, Orlando, FL. (conference cancelled, COVID-19)
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                White, G., Stuby, P., & <b>Shaveet, E.</b> (2020, July). <i>The Youth Thrive Protective and Promotive Factors – Tools you Can Use</i> [Webinar]. SAMHSA National Technical Assistance Center Webinar Series.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                Pratt, C., <b>Shaveet, E.</b>, & Irizarry, K. (2020, May). <i>What Do You Need to Know That For? How to Build Trusting Relationships to Enhance the Collection and Utilization of Data.</i> The Annual Research and Policy Conference on Child, Adolescent, and Young Adult Behavioral Health, Tampa, FL. (conference cancelled, COVID-19)
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2020). Alumni Plenary Address. <i>Gateway to College Peer Learning Conference. Moore, V., & Shaveet, E. (2019, September). History of the Recovery Learning Community Model.</i> New York Association of Psychiatric Rehabilitation Services (NYAPRS) Conference, New York.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+                McDonald, S., Moore, V., & <b>Shaveet, E.</b> (2019, April). <i>SAMHSA’s Eight Dimensions of Wellness for Youth and Young Adults.</i> Massachusetts Department of Mental Health Success Fest, Gardner, MA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+               <b>Shaveet, E.</b>, Moore, V., & McDonald, S. (2019, March). <i>Peer Lens: Innovative Approaches to Peer-Led Research.</i> The Annual Research and Policy Conference on Child, Adolescent, and Young Adult Behavioral Health, Tampa, FL.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+               Hernandez, M., Moore, V., & <b>Shaveet, E.</b> (2019). <i>An Introduction to Young Adult Peer Support.</i> Massachusetts Department of Mental Health Youth Best Practices Conference, Westborough, MA.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+               <b>Shaveet, E.</b> (2018, October). <i>Keynote Speech.</i> Massachusetts Educational Opportunity Association (MEOA) Conference, Lowell, Massachusetts.
+            </div>
+        </div>
+		<div class="entry">
+            <div class="details">
+               <b>Shaveet, E.</b> (2018). <i>Alumni Address.</i> Massachusetts Educational Opportunity Association (MEOA) Advocacy Day, Massachusetts State House, Boston, MA.
+            </div>
+        </div>
+		
+		<h2>Public Scholarship</h2>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2023, June). <i>Psychoinformatics & Digital Phenotyping: ethical complexities of emerging digital surveillance practices.</i> Medium [Personal Blog].
+            </div>
+			<a href="https://medium.com/@edenshaveet/psychoinformatics-digital-phenotyping-ethical-complexities-of-emerging-digital-surveillance-32e2457e9460" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                Gordon, J., Mohr, D., Price, R., <b>Shaveet, E.</b>, Nguyen, T., (2023, May). <i>United States Congressional Briefing: The Real-World Impact of NIMH Research.</i> Friends of NIMH [Briefing Summary].
+            </div>
+			<a href="https://friendsofnimh.org/wp-content/uploads/2023/05/Congressional-Briefing-SUMMARY-The-Real-World-Impact-of-NIMH-Research.pdf" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2022, August). <i>Developing a Joint Risk Stratification Tool in Python for Chest Pain Patients Presenting to Emergency Departments.</i> Medium [Personal Blog].
+            </div>
+			<a href="https://medium.com/@edenshaveet/developing-a-joint-risk-stratification-tool-in-python-for-chest-pain-patients-presenting-to-d13265514813" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2022, August). <i>MDSD4Health: a Machine Learning Model & Dataset Disclosure (MDSD) Curriculum for Healthcare & Public Health Contexts.</i> MLearning.ai.
+            </div>
+			<a href="https://medium.com/mlearning-ai/mdsd4health-a-machine-learning-model-dataset-disclosure-mdsd-curriculum-for-healthcare-7b10caa594e7" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2022, January). <i>Thoughts on Leveraging Information Governance Process Flows for Multi-Site Program Evaluation.</i> Medium [Personal Blog].
+            </div>
+			<a href="https://medium.com/@edenshaveet/thoughts-on-leveraging-information-governance-process-flows-for-multi-site-program-evaluation-8eb0345b52b7" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2022, January). <i>Quantification & Representation: Accuracy Disparities in Usage of Differential Privacy Methodologies.</i> Encode Justice.
+            </div>
+			<a href="https://medium.com/encode-justice/quantification-representation-accuracy-disparities-in-usage-of-differential-privacy-e15ca6f71d67" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2021, November). <i>Foundations of Data Justice-Informed Evaluation & Implementation.</i> Youth MOVE Change Initiative Workshop Series.
+            </div>
+			<a href="https://youthmovenational.org/data-justice/" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2021, September). <i>Online Data Mining in Food Safety Protocol: A Recipe for Disaster?</i> Tufts LEEFE Lab Blog.
+            </div>
+			<a href="https://sites.tufts.edu/leefelab/online-data-mining-in-food-safety-protocol-a-recipe-for-disaster/" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		<div class="entry">
+            <div class="details">
+                <b>Shaveet, E.</b> (2021, August). <i>Security Issues of Android Mobile Health and Medical Applications.</i> Tufts University Health Informatics & Analytics Newsletter.
+            </div>
+			<a href="https://www.edenshaveet.com/hia-literature-update" class="icon-button"><i class="fas fa-file-alt"></i></a>
+        </div>
+		
+    </div>
+</body>
+</html>
