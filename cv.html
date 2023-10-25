@@ -16,6 +16,25 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        .info_div {
+            max-width: 100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #925656;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left-div, .right-div {
+            display: inline-block;
+            width: 48%; /* Adjust the width as needed */
+            margin: 1%; /* Add some margin for spacing */
+            height: 75px;
+        }
         
         h1 {
             color: #73b1d3;
@@ -91,8 +110,8 @@
             background-color: transparent;
         }
 
-        .coursework {
-            font-size: 12px;
+        .grey_subtext {
+            font-size: 14px;
             color: #888;
         }
 		.subtext {
@@ -151,8 +170,17 @@
         <img src="https://raw.githack.com/EdenShaveet/CV/main/edenavatar.png" alt="Eden Shaveet, MS">
         <h1>Eden Shaveet, MS</h1>
         <p><i class="far fa-envelope"></i> <code>echo "rqra.funirrg@pbyhzovn.rqh" | tr 'A-Za-z' 'N-ZA-Mn-za-m'</code></p>
-		<p><i class="fa-solid fa-school"></i> Columbia University</p>
-		<p><i class="fa-solid fa-location-dot"></i> New York City</p>
+
+        <div class="container">
+            <div class="left-div">
+                <p><i class="fa-solid fa-school"></i> Columbia University</p>
+                <p><i class="fa-solid fa-location-dot"></i> New York City</p>
+            </div>
+            <div class="right-div">
+                <br>
+                <p><i class="fa-solid fa-globe"></i> <a href="https://www.edenshaveet.com/">edenshaveet.com</a></p>
+            </div>
+        </div>
 
         <h2>Education</h2>
         <div class="entry">
@@ -161,7 +189,9 @@
             </div>
             <span class="year">2022-2024</span>
         </div>
-        <p class="coursework">Relevant Coursework: OOP in Java, Data Structures & Algorithms, Advanced Programming (C, Unix)</p>
+        <p class="grey_subtext"><strong>Advisors: </strong><a href="http://www.cs.columbia.edu/~gravano/">Luis Gravano, Ph.D.</a>, <a href="https://www.cs.columbia.edu/~djhsu/">Daniel Hsu, Ph.D.</a></p>
+        <p class="grey_subtext"><strong>Project: </strong><a href="https://publichealth.cs.columbia.edu/">Adaptive Information Extraction from Social Media for Actionable Inferences in Public Health</a></p>
+        <p class="grey_subtext"><strong>Relevant coursework: </strong>OOP in Java, Data Structures & Algorithms, Advanced Programming (C, Unix)</p>
 		
 		<div class="entry">
             <div class="details">
@@ -169,15 +199,17 @@
             </div>
             <span class="year">2020-2022</span>
         </div>
-        <p class="coursework">Relevant Coursework: AI and Big Data in Healthcare (R, Python), Biostatistics, Data Wrangling (R)</p>
-		
+        <p class="grey_subtext"><strong>Advisor: </strong><a href="https://medicine.tufts.edu/people/faculty/olaf-dammann">Olaf Dammann, M.D., Ph.D.</a></p>
+        <p class="grey_subtext"><strong>Capstone: </strong>Google Cloud (Vivian Neilley, MS)</p>
+        <p class="grey_subtext"><strong>Relevant coursework: </strong>AI and Big Data in Healthcare (R, Python), Biostatistics, Data Wrangling (R)</p>
+
 		<div class="entry">
             <div class="details">
                 <strong>College of Our Lady of the Elms</strong> | BA, Psychology (honors)
             </div>
             <span class="year">2017-2019</span>
         </div>
-        <p class="coursework">Relevant Coursework: Research Methods (quantitative), Behavior Modification</p>
+        <p class="grey_subtext"><strong>Relevant Coursework: </strong>Research Methods (quantitative), Behavior Modification</p>
 		
 		<div class="entry">
             <div class="details">
@@ -185,8 +217,9 @@
             </div>
             <span class="year">2015-2017</span>
         </div>
-        <p class="coursework">Relevant Coursework: Computer Technologies, Statistics</p>
-        
+        <p class="grey_subtext">Gateway to College program (full scholarship)</p>
+        <p class="grey_subtext"><strong>Relevant Coursework: </strong>Computer Technologies, Statistics</p>
+
 		<h2>Professional Experience</h2>
 		<div class="entry">
             <div class="details">
@@ -194,6 +227,7 @@
             </div>
             <span class="year">2022-2024</span>
         </div>
+        <p class="grey_subtext"><strong>Labs: </strong>Database Research Group; Fast Healthcare Interoperability Resources (FHIR) Lab</p>
 		
 		<div class="entry">
             <div class="details">
@@ -201,19 +235,23 @@
             </div>
             <span class="year">2021-2022</span>
         </div>
+        <p class="grey_subtext"><strong>Labs: </strong>Digital Health Research Group; Health Informatics & Analytics Research Group; Leveraging Environmental Epidemiology for Equity (LEEFE) Lab</p>
 		
 		<div class="entry">
             <div class="details">
-                <strong>Project Coordinator, Research & Evaluation</strong> | Commonwealth Medicine University of Massachusetts Chan Medical School
+                <strong>Project Coordinator, Research & Evaluation</strong> | Commonwealth Medicine, University of Massachusetts Chan Medical School
             </div>
             <span class="year">2020-2021</span>
         </div>
+        <p class="grey_subtext"><strong>Groups: </strong>Transition Age Youth and Young Adults System of Care Access Initiative (TSAI) Evaluation Group; Healthy Transitions Evaluation Group</p>
+
 		<div class="entry">
             <div class="details">
                 <strong>Peer Evaluation Liaison</strong> | Zia Young Adult Access Center
             </div>
             <span class="year">2019-2020</span>
         </div>
+        <p class="grey_subtext"><strong>Groups: </strong>Transition Age Youth and Young Adults System of Care Access Initiative (TSAI) Evaluation Group</p>
 
 		<div class="entry">
             <div class="details">
@@ -221,35 +259,97 @@
             </div>
             <span class="year">2018-2019</span>
         </div>
-		
-		<h2>Academic Service</h2>
+        <p class="grey_subtext"><strong>Labs: </strong>Psychotic Disorders Research Group</p>
+
+        <!-- Honors & Awards -->
+		<h2>Honors & Awards</h2>
 		<div class="entry">
             <div class="details">
-                <strong>Chair, Research & Evaluation Subcommittee</strong> | Youth Best Practice Committee, Youth MOVE National
+                <strong>NSF Computer and Information Science and Engineering Graduate Fellowship</strong> | National Science Foundation
             </div>
-            <span class="year">2023 -</span>
+            <span class="year">2023</span>
         </div>
+	    <p class="grey_subtext">$159,000 award to fund 3 years of Ph.D. study</p>
+
+        <div class="entry">
+            <div class="details">
+                <strong>Patient Safety Award, Patient Safety Technology Challenge Winner</strong> | DivHacks Hackathon, Pittsburgh Regional Health Initiative (PRHI)
+            </div>
+            <span class="year">2023</span>
+        </div>
+	    <p class="grey_subtext">Awarded for the development of the memorAIs application</p>
+
+        <div class="entry">
+            <div class="details">
+                <strong>Best Use of Taipy API</strong> | DivHacks Hackathon, Taipy, Major League Hacking (MLH)
+            </div>
+            <span class="year">2023</span>
+        </div>
+	    <p class="grey_subtext">Awarded for use in the development of the memorAIs application</p>
+
+        <div class="entry">
+            <div class="details">
+                <strong>MS in Health Informatics and Analytics Academic Achievement Award</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2023</span>
+        </div>
+        <p class="grey_subtext">Awarded for high academic achievement and showing promise toward significant contributions to the field of health informatics.</p>
+
+		<div class="entry">
+            <div class="details">
+                <strong>"18 Best" Poster Recognition, Tufts GIS Expo</strong> | Tufts University
+            </div>
+            <span class="year">2022</span>
+        </div>
+	    <p class="grey_subtext">Winning poster: <em>Free Food Near Me: Mapping U.S. Food Assistance Google Search Volumes, Food Insecurity Rates, and Location of Feeding America Network Food Banks in 2020.</em></p>
+
+		<div class="entry">
+            <div class="details">
+                <strong>Liberal Arts & Sciences Curriculum Award</strong> | Mount Wachusett Community College
+            </div>
+            <span class="year">2017</span>
+        </div>
+	    <p class="grey_subtext">Awarded for highest academic achievement in LA&S degree program</p>
 		
+        <div class="entry">
+            <div class="details">
+                <strong>Valedictorian, Gateway to College</strong> | Mount Wachusett Community College
+            </div>
+            <span class="year">2017</span>
+        </div>
+	    <p class="grey_subtext">Selected as Valedictorian speaker for Gateway to College graduating class of 2017 (4.0 GPA)</p>
+    
+		<div class="entry">
+            <div class="details">
+                <strong>Phi Theta Kappa Massachusetts Academic Award</strong> | Mount Wachusett Community College
+            </div>
+            <span class="year">2017</span>
+        </div>
+	    <p class="grey_subtext">Awarded for high academic achievement across all degree programs at MWCC in 2017</p>
+		
+        <!-- ACADEMIC SERVICE -->
+		<h2>Academic Service</h2>
 		<div class="entry">
             <div class="details">
                 <strong>Member, Stakeholder Advisory Board</strong> | Center to Optimize Evidence-Based Practice Implementation for Clinical Impact, University of Washington, Kaiser Permanente Washington Health Research Institute, University of Michigan
             </div>
             <span class="year">2022 -</span>
         </div>
-		
-		<div class="entry">
+
+        <div class="entry">
             <div class="details">
                 <strong>Manuscript Reviewer</strong> | Journal of Medical Internet Research (JMIR) | Online Journal of Public Health Informatics (OJPHI)
             </div>
             <span class="year">2022 -</span>
         </div>
-		
-		<div class="entry">
+        
+        <div class="entry">
             <div class="details">
                 <strong>Member, Research & Evaluation Subcommittee</strong> | Youth Best Practice Committee, Youth MOVE National
             </div>
             <span class="year">2019 -</span>
         </div>
+        <p class="grey_subtext"><strong>Chair: </strong> 2023 - 2024 appointment</p>
 		
 		<div class="entry">
             <div class="details">
@@ -266,18 +366,25 @@
 			<li><i class="fas fa-globe"></i> R & R Studio</li>
 			<li><i class="fas fa-globe"></i> SAS</li>
 			<li><i class="fas fa-globe"></i> HTML & CSS</li>
+            <li><i class="fas fa-globe"></i> JavaScript</li>
+            <li><i class="fas fa-globe"></i> SAS</li>
 			<li><i class="fas fa-globe"></i> Stata</li>
 			<li><i class="fas fa-globe"></i> REDCap</li>
 			<li><i class="fas fa-globe"></i> SPARS</li>
+            <li><i class="fas fa-globe"></i> MongoDB</li>
+            <li><i class="fas fa-globe"></i> Docker</li>
+            <li><i class="fas fa-globe"></i> Notepad++</li>
+            <li><i class="fas fa-globe"></i> Visual Studio Code</li>
 			<li><i class="fas fa-globe"></i> MS Excel</li>
 			<li><i class="fas fa-globe"></i> Replit</li>
 			<li><i class="fas fa-globe"></i> Git & GitHub</li>
-			<li><i class="fas fa-globe"></i> Google Colab (Jupyter notebook)</li>
+			<li><i class="fas fa-globe"></i> Google Colaboratory</li>
 			<li><i class="fas fa-globe"></i> Tableau</li>
 			<li><i class="fas fa-globe"></i> ArcGIS</li>
 			<li><i class="fas fa-globe"></i> QGIS</li>
         </ul>
 		
+        <!-- CERTIFICATIONS -->
 		<h2>Certifications</h2>
 		<div class="entry">
             <div class="details">
@@ -291,29 +398,30 @@
             </div>
             <span class="year">2022</span>
         </div>
-        <p class="subtext">Credential ID: CT-XTH930AO</p>
+        <p class="grey_subtext">Credential ID: CT-XTH930AO</p>
 		<div class="entry">
             <div class="details">
                 <strong>R Programming Certificate</strong> | Programming Hub
             </div>
             <span class="year">2021</span>
         </div>
-        <p class="subtext">Credential ID:1624109310793</p>
+        <p class="grey_subtext">Credential ID:1624109310793</p>
 		<div class="entry">
             <div class="details">
                 <strong>Ethical Hacking Certificate</strong> | Programming Hub
             </div>
             <span class="year">2020</span>
         </div>
-        <p class="subtext">Credential ID:1640915692582</p>
+        <p class="grey_subtext">Credential ID:1640915692582</p>
 		<div class="entry">
             <div class="details">
                 <strong>Certified Peer Specialist</strong> | Kiva Centers
             </div>
             <span class="year">2018</span>
         </div>
-        <p class="subtext">Credential ID:201892</p>
+        <p class="grey_subtext">Credential ID:201892</p>
 		
+        <!-- TEACHING -->
 		<h2>Teaching</h2>
 		<div class="entry">
             <div class="details">
@@ -340,87 +448,7 @@
             <span class="year">2016</span>
         </div>
 		
-		<h2>Research Group Affiliations</h2>
-		<div class="entry">
-            <div class="details">
-                <strong>Database Research Group</strong> | Columbia University
-            </div>
-            <span class="year">2022 -</span>
-        </div>
-		<div class="entry">
-            <div class="details">
-                <strong>Fast Healthcare Interoperability Resources (FHIR) Lab </strong> | Columbia University
-            </div>
-            <span class="year">2022 -</span>
-        </div>
-		<div class="entry">
-            <div class="details">
-                <strong>Digital Health Research Group </strong> | Tufts University
-            </div>
-            <span class="year">2021</span>
-        </div>
-		<div class="entry">
-            <div class="details">
-                <strong>Health Informatics & Analytics Research Group </strong> | Tufts University
-            </div>
-            <span class="year">2021</span>
-        </div>
-		<div class="entry">
-            <div class="details">
-                <strong>Leveraging Environmental Epidemiology for Equity (LEEFE) Lab </strong> | Tufts University
-            </div>
-            <span class="year">2020</span>
-        </div>
-		<div class="entry">
-            <div class="details">
-                <strong>Commonwealth Medicine, Research & Evaluation Group </strong> | University of Massachusetts Chan Medical School
-            </div>
-            <span class="year">2018-2019</span>
-        </div>
-		<div class="entry">
-            <div class="details">
-                <strong>Psychotic Disorders Research Program </strong> | University of Massachusetts Chan Medical School
-            </div>
-            <span class="year">2018</span>
-        </div>
-		
-		<h2>Honors & Awards</h2>
-		<div class="entry">
-            <div class="details">
-                <strong>MS in Health Informatics and Analytics Academic Achievement Award</strong>
-            </div>
-            <span class="year">2023</span>
-        </div>
-	    <p class="subtext">Tufts University School of Medicine</p>
-		<div class="entry">
-            <div class="details">
-                <strong>"18 Best" Poster Recognition, Tufts GIS Expo</strong>
-            </div>
-            <span class="year">2022</span>
-        </div>
-	    <p class="subtext">Tufts University</p>
-		<div class="entry">
-            <div class="details">
-                <strong>Liberal Arts & Sciences Curriculum Award</strong>
-            </div>
-            <span class="year">2017</span>
-        </div>
-	    <p class="subtext">Mount Wachusett Community College</p>
-		<div class="entry">
-            <div class="details">
-                <strong>Valedictorian, Gateway to College</strong>
-            </div>
-            <span class="year">2017</span>
-        </div>
-	    <p class="subtext">Mount Wachusett Community College</p>
-		<div class="entry">
-            <div class="details">
-                <strong>Phi Theta Kappa Massachusetts Academic Award</strong>
-            </div>
-            <span class="year">2017</span>
-        </div>
-	    <p class="subtext">Mount Wachusett Community College</p>
-		
+        <!-- PROJECTS -->
 		<h2>Projects</h2>
 		<div class="entry">
             <div class="details">
@@ -428,8 +456,9 @@
             </div>
             <span class="year">2022 -</span>
         </div>
-        <p class="subtext">PI: Luis Gravano, Ph.D., Co-PI: Daniel Hsu, Ph.D.</p>
-		<p class="subtext">Funding: National Science Foundation Grant No. IIS-15-63785</p>
+        <p class="grey_subtext"><strong>PI: </strong>Luis Gravano, Ph.D., Co-PI: Daniel Hsu, Ph.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>National Science Foundation Grant No. IIS-15-63785</p>
+        <p class="grey_subtext"><strong>Role: </strong>Lead Research Assistant; Geospatial Project Lead</p>
 		
 		<div class="entry">
             <div class="details">
@@ -437,17 +466,8 @@
             </div>
             <span class="year">2022</span>
         </div>
-        <p class="subtext">MS Capstone Project</p>
-		<p class="subtext">Preceptor: Vivian Neilley, M.S., Google Cloud</p>
-		
-		<div class="entry">
-            <div class="details">
-                <strong>Investigation of the Impact of Medication Storage on Medication Adherence</strong> | Tufts University School of Medicine
-            </div>
-            <span class="year">2022</span>
-        </div>
-        <p class="subtext">PI: Lisa Gualtieri, Ph.D.</p>
-		<p class="subtext">Funding: Tier 3 Springboard Award, Tufts University Office of the Provost and the Office of the Vice Provost for Research (OVPR)</p>
+		<p class="grey_subtext"><strong>Preceptor: </strong>Vivian Neilley, M.S., Google Cloud</p>
+        <p class="grey_subtext"><strong>Role: </strong>Project Lead (MS Capstone project)</p>
 		
 		<div class="entry">
             <div class="details">
@@ -455,44 +475,58 @@
             </div>
             <span class="year">2021</span>
         </div>
-        <p class="subtext">PI & Professor: Shikhar Shrestha, Ph.D.</p>
-		<p class="subtext">Research associated with HIA 219: Geographic Information Systems (GIS) and Spatial Epidemiology</p>
-		
+        <p class="grey_subtext"><strong>PI & Professor: </strong>Shikhar Shrestha, Ph.D.</p>
+		<p class="grey_subtext">Research associated with HIA 219: Geographic Information Systems (GIS) and Spatial Epidemiology (Spring 2022)</p>
+        <p class="grey_subtext"><strong>Role: </strong>Project Lead (semester project)</p>
+
 		<div class="entry">
             <div class="details">
                 <strong>HEART-EDACS: Developing and Automating a Joint Cardiac Risk Stratification Tool in Python</strong> | Tufts University School of Medicine
             </div>
             <span class="year">2021</span>
         </div>
-        <p class="subtext">Professor: Olaf Dammann, M.D., Ph.D.</p>
-		<p class="subtext">Project associated with HIA 225: Python for Health Informatics & Analytics</p>
+        <p class="grey_subtext"><strong>Professor:</strong> Olaf Dammann, M.D., Ph.D.</p>
+		<p class="grey_subtext">Project associated with HIA 225: Python for Health Informatics & Analytics (Spring 2022)</p>
+        <p class="grey_subtext"><strong>Role: </strong>Python scripting lead</p>
 		
 		<div class="entry">
             <div class="details">
-                <strong>Medication Information Seeking & Home Medication Management During COVID-19</strong> | Tufts University School of Medicine
+                <strong>Medication Information Seeking Behaviors & Impact of Medication Storage on Medication Adherence</strong> | Tufts University School of Medicine
             </div>
-            <span class="year">2021</span>
+            <span class="year">2022</span>
         </div>
-        <p class="subtext">PI: Lisa Gualtieri, Ph.D.</p>
-		<p class="subtext">Funding: Tufts Clinical & Translational Science Institute (CTSI)</p>
-		
+        <p class="grey_subtext"><strong>PI: </strong>Lisa Gualtieri, Ph.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>Tier 3 Springboard Award, Tufts University Office of the Provost and the Office of the Vice Provost for Research (OVPR),Tufts Clinical & Translational Science Institute (CTSI)</p>
+        <p class="grey_subtext"><strong>Role: </strong>Lead Research Assistant</p>
+
 		<div class="entry">
             <div class="details">
                 <strong>Web-Based Health Information Seeking Methods & Time Since Provider Engagement</strong> | Tufts University
             </div>
             <span class="year">2021-2022</span>
         </div>
-        <p class="subtext">PIs: Jennifer Allen, Sc.D., Peter Levine, Ph.D., Thomas Stopka, Ph.D.</p>
-		<p class="subtext">Funding: Tufts OVPR, RSSP, Tufts CTSI grant UL1TR002544</p>
-		
+        <p class="grey_subtext"><strong>PIs: </strong>Jennifer Allen, Sc.D., Peter Levine, Ph.D., Thomas Stopka, Ph.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>Tufts OVPR, RSSP, Tufts CTSI grant UL1TR002544</p>
+        <p class="grey_subtext"><strong>Role: </strong>Project Lead; First Author</p>
+
 		<div class="entry">
             <div class="details">
-                <strong>Ripple Effects: Measuring the Ripple Effect Outcomes of Children’s Mental Health Services Implementation</strong> | University of Washington | Youth MOVE National
+                <strong>Ripple Effects: Measuring the Ripple Effect Outcomes of Children’s Mental Health Services Implementation</strong> | University of Washington, Youth MOVE National
             </div>
             <span class="year">2021-2023</span>
         </div>
-        <p class="subtext">PI: Michael Pullmann, Ph.D.</p>
-		<p class="subtext">Funding: National Institute of Mental Health 1R21MH119360-01A1</p>
+        <p class="grey_subtext"><strong>PI: </strong>Michael Pullmann, Ph.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>National Institute of Mental Health 1R21MH119360-01A1</p>
+        <p class="grey_subtext"><strong>Role: </strong>Participatory research team member</p>
+
+        <div class="entry">
+            <div class="details">
+                <strong>Designing Digital Health Products for Older Adults Using Design Thinking</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2021-2022</span>
+        </div>
+        <p class="grey_subtext"><strong>PI: </strong>Lisa Gualtieri, Ph.D.</p>
+        <p class="grey_subtext"><strong>Role: </strong>Research Assistant; AHT2 Project Lead; AHT2 First Author</p>
 		
 		<div class="entry">
             <div class="details">
@@ -500,36 +534,51 @@
             </div>
             <span class="year">2021</span>
         </div>
-        <p class="subtext">PI: Laura Corlin, Ph.D.</p>
-		<p class="subtext">Funding: Tufts University and the Tufts Medical Center COVID-19 Rapid Response Seed Funding Program</p>
-		
+        <p class="grey_subtext"><strong>PI: </strong>Laura Corlin, Ph.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>Tufts University and the Tufts Medical Center COVID-19 Rapid Response Seed Funding Program</p>
+        <p class="grey_subtext"><strong>Role: </strong>Visualization Technical Assistance</p>
+
+        <div class="entry">
+            <div class="details">
+                <strong>Develop, Enable, Manage, Improve (DEMI): Leveraging Information Governance Process Flows for Multi-Site Program Evaluation</strong> | Tufts University School of Medicine
+            </div>
+            <span class="year">2021</span>
+        </div>
+        <p class="grey_subtext"><strong>Professors: </strong>Chad Brouillard, JD, Kimberly Reich, MBA, MJ</p>
+		<p class="grey_subtext">Project associated with HIA 221: Data Trust: Information Governance in Health (Spring 2021)</p>
+        <p class="grey_subtext"><strong>Role: </strong>Project Lead (semester project)</p>
+        
 		<div class="entry">
             <div class="details">
                 <strong>Massachusetts Healthy Transitions Grant Evaluation, second iteration</strong> | University of Massachusetts Chan Medical School
             </div>
             <span class="year">2020-2021</span>
         </div>
-        <p class="subtext">PI: Alexis Henry, Sc.D.</p>
-		<p class="subtext">Funding: U.S. Substance Abuse and Mental Health Services Administration (SAMHSA) with operational support from the Massachusetts Department of Mental Health (DMH)</p>
-		
+        <p class="grey_subtext"><strong>PI: </strong>Alexis Henry, Sc.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>U.S. Substance Abuse and Mental Health Services Administration (SAMHSA) with operational support from the Massachusetts Department of Mental Health (DMH)</p>
+        <p class="grey_subtext"><strong>Role: </strong>Project Coordinator; Junior Evaluator</p>
+
 		<div class="entry">
             <div class="details">
                 <strong>Tobacco Control Evaluation and Technical Assistance</strong> | University of Massachusetts Chan Medical School
             </div>
             <span class="year">2020-2021</span>
         </div>
-        <p class="subtext">PIs: Jack Gettens, Ph.D., Linda Long-Bellil, Ph.D., J.D.</p>
-		<p class="subtext">Funding: Massachusetts Department of Public Health (DPH)</p>
-		
+        <p class="grey_subtext"><strong>PIs: </strong>Jack Gettens, Ph.D., Linda Long-Bellil, Ph.D., J.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>Massachusetts Department of Public Health (DPH)</p>
+        <p class="grey_subtext"><strong>Role: </strong>Project Coordinator</p>
+
 		<div class="entry">
             <div class="details">
                 <strong>System of Care Expansion for Transition Age Youth Evaluation</strong> | University of Massachusetts Chan Medical School
             </div>
             <span class="year">2018-2021</span>
         </div>
-        <p class="subtext">PI: Alexis Henry, Sc.D.</p>
-		<p class="subtext">Funding: U.S. Substance Abuse and Mental Health Services Administration (SAMHSA) with operational support from the Massachusetts Department of Mental Health (DMH)</p>
+        <p class="grey_subtext"><strong>PI: </strong>Alexis Henry, Sc.D.</p>
+		<p class="grey_subtext"><strong>Funding: </strong>U.S. Substance Abuse and Mental Health Services Administration (SAMHSA) with operational support from the Massachusetts Department of Mental Health (DMH)</p>
+        <p class="grey_subtext"><strong>PI: </strong>Participatory Stakeholder; Project Coordinator; Junior Evaluator</p>
 		
+        <!-- PUBLICATIONS -->
 		<h2>Publications</h2>
 		<div class="entry">
             <div class="details">
@@ -537,7 +586,7 @@
             </div>
             <a href="https://formative.jmir.org/2022/11/e42126/" class="icon-button"><i class="fas fa-file-alt"></i></a>
         </div>
-		<p class="subtext"><b>Shaveet E</b>, Urquhart C, Gallegos M, Dammann O, Corlin L Web-Based Health Information–Seeking Methods and Time Since Provider Engagement: Cross-sectional Study <i>JMIR Form Res.</i> 2022;6(11):e42126 doi: 10.2196/42126</p>
+		<p class="grey_subtext"><b>Shaveet E</b>, Urquhart C, Gallegos M, Dammann O, Corlin L Web-Based Health Information–Seeking Methods and Time Since Provider Engagement: Cross-sectional Study <i>JMIR Form Res.</i> 2022;6(11):e42126 doi: 10.2196/42126</p>
 		
 		<div class="entry">
             <div class="details">
@@ -545,7 +594,7 @@
             </div>
             <a href="https://pubmed.ncbi.nlm.nih.gov/36457348/" class="icon-button"><i class="fas fa-file-alt"></i></a>
         </div>
-		<p class="subtext"><b>Shaveet, E.</b>, Gallegos, M., Castle, J., & Gualtieri, L. (2022). Designing a Browser Extension for Reliable Online Health Information Retrieval Among Older Adults Using Design Thinking. <i>Online Journal of Public Health Informatics</i>, 14(1). https://doi.org/10.5210/ojphi.v14i1.12593</p>
+		<p class="grey_subtext"><b>Shaveet, E.</b>, Gallegos, M., Castle, J., & Gualtieri, L. (2022). Designing a Browser Extension for Reliable Online Health Information Retrieval Among Older Adults Using Design Thinking. <i>Online Journal of Public Health Informatics</i>, 14(1). https://doi.org/10.5210/ojphi.v14i1.12593</p>
 		
 		<div class="entry">
             <div class="details">
@@ -553,7 +602,7 @@
             </div>
             <a href="https://pubmed.ncbi.nlm.nih.gov/36405415/" class="icon-button"><i class="fas fa-file-alt"></i></a>
         </div>
-		<p class="subtext">Gualtieri, L., <b>Shaveet, E.</b>, Estime, B., Patel, A. (2022) The role of home medication storage location in increasing medication adherence for middle-aged and older adults, <i>Frontiers in Digital Health</i>, DOI: https://doi.org/10.3389/fdgth.2022.999981</p>
+		<p class="grey_subtext">Gualtieri, L., <b>Shaveet, E.</b>, Estime, B., Patel, A. (2022) The role of home medication storage location in increasing medication adherence for middle-aged and older adults, <i>Frontiers in Digital Health</i>, DOI: https://doi.org/10.3389/fdgth.2022.999981</p>
 		
 		<div class="entry">
             <div class="details">
@@ -561,7 +610,7 @@
             </div>
             <a href="https://www.tandfonline.com/doi/abs/10.1080/17538068.2022.2060665?journalCode=ycih20" class="icon-button"><i class="fas fa-file-alt"></i></a>
         </div>
-		<p class="subtext">Gualtieri, L., <b>Shaveet, E.</b>, Kim, D. (2022) Digital Health Innovation for Older Adults through Design Thinking, <i>Journal of Communication in Healthcare</i>, DOI: 10.1080/17538068.2022.2060665.</p>
+		<p class="grey_subtext">Gualtieri, L., <b>Shaveet, E.</b>, Kim, D. (2022) Digital Health Innovation for Older Adults through Design Thinking, <i>Journal of Communication in Healthcare</i>, DOI: 10.1080/17538068.2022.2060665.</p>
 		
 		<h2>Under Review</h2>
 		<div class="entry">
@@ -570,6 +619,7 @@
             </div>
         </div>
 		
+        <!-- POSTERS -->
 		<h2>Posters</h2>
 		<div class="entry">
             <div class="details">
@@ -590,6 +640,7 @@
 			<a href="https://www.edenshaveet.com/other-projects/gis-cartography/tufts-gis-symposium-poster-2022" class="icon-button"><i class="fas fa-file-alt"></i></a>
         </div>
 		
+        <!-- PRESENTATIONS -->
 		<h2>Presentations</h2>
 		<div class="entry">
             <div class="details">
@@ -687,6 +738,7 @@
             </div>
         </div>
 		
+        <!-- PUBLIC SCHOLARSHIP -->
 		<h2>Public Scholarship</h2>
 		<div class="entry">
             <div class="details">
@@ -694,12 +746,7 @@
             </div>
 			<a href="https://medium.com/@edenshaveet/psychoinformatics-digital-phenotyping-ethical-complexities-of-emerging-digital-surveillance-32e2457e9460" class="icon-button"><i class="fa-solid fa-globe"></i></a>
         </div>
-		<div class="entry">
-            <div class="details">
-                Gordon, J., Mohr, D., Price, R., <b>Shaveet, E.</b>, Nguyen, T., (2023, May). <i>United States Congressional Briefing: The Real-World Impact of NIMH Research.</i> Friends of NIMH [Briefing Summary].
-            </div>
-			<a href="https://friendsofnimh.org/wp-content/uploads/2023/05/Congressional-Briefing-SUMMARY-The-Real-World-Impact-of-NIMH-Research.pdf" class="icon-button"><i class="fa-solid fa-globe"></i></a>
-        </div>
+		
 		<div class="entry">
             <div class="details">
                 <b>Shaveet, E.</b> (2022, August). <i>Developing a Joint Risk Stratification Tool in Python for Chest Pain Patients Presenting to Emergency Departments.</i> Medium [Personal Blog].
@@ -741,6 +788,28 @@
                 <b>Shaveet, E.</b> (2021, August). <i>Security Issues of Android Mobile Health and Medical Applications.</i> Tufts University Health Informatics & Analytics Newsletter.
             </div>
 			<a href="https://www.edenshaveet.com/hia-literature-update" class="icon-button"><i class="fa-solid fa-globe"></i></a>
+        </div>
+
+        <h2>Select Media</h2>
+        <div class="entry">
+            <div class="details">
+                <strong>memorAIs wins DivHacks Hackathon.</strong> Patient Safety Technology Challenge. Published Sept, 2023.
+            </div>
+			<a href="https://www.patientsafetytech.com/past-competitions/divhacks" class="icon-button"><i class="fa-solid fa-globe"></i></a>
+        </div>
+		
+        <div class="entry">
+            <div class="details">
+                <strong>United States Congressional Briefing: The Real-World Impact of NIMH Research.</strong> Friends of NIMH. Published May, 2023.
+            </div>
+			<a href="https://friendsofnimh.org/wp-content/uploads/2023/05/Congressional-Briefing-SUMMARY-The-Real-World-Impact-of-NIMH-Research.pdf" class="icon-button"><i class="fa-solid fa-globe"></i></a>
+        </div>
+		
+        <div class="entry">
+            <div class="details">
+                <strong>Mental Health Research Impact in the Real World.</strong> FABBS. Published May 11, 2023.
+            </div>
+			<a href="https://fabbs.org/news/2023/05/mental-health-research-impact-in-the-real-world/" class="icon-button"><i class="fa-solid fa-globe"></i></a>
         </div>
 		
     </div>
